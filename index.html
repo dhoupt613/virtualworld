@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#161c17"/><title>Apple Atlas — A world within</title></head>
+<body>
+<div id="app">
+<canvas id="world" aria-label="Interactive three-dimensional apple explorer"></canvas><div class="vignette"></div>
+<header><a class="brand" href="./" aria-label="Apple Atlas home"><span class="brand-icon">◉</span> APPLE ATLAS</a><span class="edition">FIELD NOTES <span>001 / MALUS DOMESTICA</span></span><button id="sound" class="quiet-button" aria-pressed="false" title="Toggle ambient sound">Sound off <span>◌</span></button></header>
+<main>
+<div class="intro"><div class="eyebrow"><i></i> AN EXPLORATION IN THREE SCALES</div><h1>A world<br>within.</h1><p id="description">Beneath a familiar skin, an unfamiliar landscape. Step inside an apple and explore the architecture of life.</p><button id="enter" class="primary-button">Enter the apple <span>→</span></button><span class="intro-note">YOUR JOURNEY STARTS AT THE SURFACE</span></div>
+<aside class="specimen"><div class="eyebrow">YOU ARE EXPLORING</div><h2 id="specimen-title">The apple</h2><p id="specimen-detail">A crisp world of flesh, fibers, and seeds.</p><div class="specimen-divider"></div><dl><div><dt>SCALE</dt><dd id="scale-value">1 : 1</dd></div><div><dt>FIELD OF VIEW</dt><dd id="field-value">~ 8 cm</dd></div></dl><p class="science-note">An illustrative exploration.<br>Structures are simplified across scales.</p></aside>
+<div class="scene-caption"><span id="caption-number">01</span><span id="caption">FLESH & CORE</span><div></div></div>
+</main>
+<footer><div class="scale-picker" role="group" aria-label="Exploration scale"><span class="scale-label">CHANGE YOUR PERSPECTIVE</span><div class="scale-tabs"><button data-mode="fruit" aria-pressed="true"><span>01</span> Fruit <i>cm</i></button><button data-mode="cell" aria-pressed="false"><span>02</span> Cell <i>μm</i></button><button data-mode="molecule" aria-pressed="false"><span>03</span> Molecule <i>nm</i></button></div></div><div class="controls"><span>DRAG TO LOOK</span><b>·</b><span>SCROLL TO ZOOM</span><b>·</b><span>W A S D TO MOVE</span></div><button id="reset" class="quiet-button">Reset view <span>↺</span></button></footer>
+<div class="movement" aria-label="Movement controls"><button data-move="forward" aria-label="Move forward">↑</button><div><button data-move="left" aria-label="Move left">←</button><button data-move="back" aria-label="Move backward">↓</button><button data-move="right" aria-label="Move right">→</button></div></div>
+<div id="status" role="status" aria-live="polite">Preparing your world…</div><div id="error" hidden><h2>This world needs WebGL</h2><p>Your browser could not start the 3D renderer. Try a browser with hardware acceleration enabled.</p></div>
+</div><script type="module" src="/src/main.js"></script>
+</body></html>

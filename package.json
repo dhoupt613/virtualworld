@@ -1,0 +1,32 @@
+{
+  "name": "apple-atlas",
+  "version": "1.0.0",
+  "description": "An interactive journey through an apple",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "test:hosted": "playwright test --config playwright.hosting.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhoupt613/virtualworld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dhoupt613/virtualworld/issues"
+  },
+  "homepage": "https://github.com/dhoupt613/virtualworld#readme",
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "vite": "^8.3.3"
+  },
+  "private": true
+}
